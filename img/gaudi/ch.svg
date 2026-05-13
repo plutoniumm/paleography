@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <!-- Gaudi ch -->
+  <line x1="7" y1="3.5" x2="17" y2="3.5" stroke="black" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M16 4 Q16 3.5 11 3.5 Q6 3.5 6 9 Q6 15 11 15 Q15 15 15 19" stroke="black" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="15" y1="12" x2="18" y2="12" stroke="black" stroke-width="1.8" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <!-- Tamil-Brahmi ka: vertical stroke with horizontal bar and right hook -->
+  <path d="M6 3 L6 21" stroke="#000" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M6 7 L16 7" stroke="#000" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M16 7 L16 14 Q16 18 12 18" stroke="#000" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

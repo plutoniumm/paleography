@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(conda run -n paleo python3 *)",
+      "Bash(conda run -n qudit python lint.py *)",
+      "Bash(conda run -n qudit python -m view.lint *)"
+    ]
+  }
+}

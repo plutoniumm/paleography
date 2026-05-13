@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <radialGradient id="d" cx=".35" cy=".3" r=".8">
+      <stop offset="0"  stop-color="#4a4a4a"/>
+      <stop offset=".6" stop-color="#1a1a1a"/>
+      <stop offset="1"  stop-color="#050505"/>
+    </radialGradient>
+    <linearGradient id="i" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#a8a8a8"/>
+    </linearGradient>
+    <linearGradient id="g" x1=".2" x2=".8" y2="1">
+      <stop offset="0"   stop-color="#fff" stop-opacity=".28"/>
+      <stop offset=".55" stop-color="#fff" stop-opacity=".02"/>
+      <stop offset="1"   stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+
+    <circle    id="c" cx="500" cy="500" r="480"/>
+    <clipPath  id="L"><rect width="493" height="1000"/></clipPath>
+    <clipPath  id="R"><rect x="507" width="493" height="1000"/></clipPath>
+    <clipPath  id="D"><use href="#c"/></clipPath>
+    <filter    id="s"><feDropShadow dx="2" dy="4" stdDeviation="4" flood-opacity=".5"/></filter>
+  </defs>
+
+  <use href="#c" fill="url(#d)"/>
+
+  <g clip-path="url(#D)" fill="url(#i)" text-anchor="middle" font-weight="600" filter="url(#s)">
+    <text x="500" y="700" font-size="620" font-family="'Noto Sans Devanagari',serif" clip-path="url(#L)">क</text>
+    <text x="500" y="730" font-size="720" font-family="'Noto Sans Tamil',serif"      clip-path="url(#R)">க</text>
+  </g>
+
+  <use href="#c" fill="url(#g)"/>
+</svg>
