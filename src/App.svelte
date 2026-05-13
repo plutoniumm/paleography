@@ -1,5 +1,6 @@
 <script lang="ts">
-  import data from './lib/data.json';
+  import meta from './lib/scripts.json';
+  import symbolsRaw from './lib/symbols.tsv?raw';
 
   type Sym = string | { img: string };
 
@@ -10,7 +11,19 @@
     symbols: Sym[];
   }
 
-  const scripts = data.scripts as Script[];
+  // Parse symbols.tsv: rows = scripts, cols = consonant slots
+  const tsvRows = symbolsRaw.trim().split('\n').map(r => r.split('\t'));
+  const symMap = new Map<string, Sym[]>(
+    tsvRows.slice(1).map(row => [
+      row[0],
+      row.slice(1).map(v => v.startsWith('/img/') ? { img: v } : v) as Sym[]
+    ])
+  );
+
+  const scripts: Script[] = (meta.scripts as Omit<Script,'symbols'>[]).map(s => ({
+    ...s,
+    symbols: symMap.get(s.id) ?? Array(38).fill('') as Sym[]
+  }));
 
   // Build id → script lookup
   const byId = Object.fromEntries(scripts.map(s => [s.id, s]));
@@ -29,14 +42,21 @@
   }
 
   let selected: string | null = null;
+  let selectedLetter: number | null = null;
   let activeTab = 'aramaic';
 
   function toggle(id: string) {
+    const next = selected === id ? null : id;
+    selectedLetter = null;
     if (document.startViewTransition) {
-      document.startViewTransition(() => { selected = selected === id ? null : id; });
+      document.startViewTransition(() => { selected = next; });
     } else {
-      selected = selected === id ? null : id;
+      selected = next;
     }
+  }
+
+  function pickLetter(i: number) {
+    selectedLetter = selectedLetter === i ? null : i;
   }
 
   $: visibleIds = selected ? ancestors(selected) : null;
@@ -69,10 +89,19 @@
 
   {#if activeTab === 'aramaic'}
     <h1>Brahmic Script Evolution</h1>
+    <p class="hint">
+      Click a row to trace its ancestor scripts.
+      {#if selected}While filtered, click any character cell to isolate its evolution across that lineage.{/if}
+    </p>
     {#if selected}
-      <button class="clear" on:click={() => { if (document.startViewTransition) { document.startViewTransition(() => { selected = null; }); } else { selected = null; } }}>
-        ← show all
+      <button class="clear" on:click={() => toggle(selected!)}>
+        ← show all scripts
       </button>
+      {#if selectedLetter !== null}
+        <button class="clear" on:click={() => selectedLetter = null}>
+          ← show all characters
+        </button>
+      {/if}
     {/if}
     <div class="table-wrap">
       <table>
@@ -80,8 +109,10 @@
           <tr>
             <th class="source-col">Source</th>
             <th class="script-col">Script</th>
-            {#each data.letters as letter}
-              <th class:dim={!letter}>{letter as string}</th>
+            {#each meta.letters as letter, i}
+              {#if selectedLetter === null || selectedLetter === i}
+                <th class:dim={!letter}>{letter as string}</th>
+              {/if}
             {/each}
           </tr>
         </thead>
@@ -89,6 +120,7 @@
           {#each visibleScripts as row (row.id)}
             <tr
               class:selected={selected === row.id}
+              data-script={row.id}
               on:click={() => toggle(row.id)}
             >
               <td class="source-col">
@@ -99,15 +131,21 @@
               <td class="script-col">
                 <span class="name">{row.name}</span>
               </td>
-              {#each row.symbols as sym}
-                {@const s = sym as Sym}
-                <td class:dim={!sym || sym === ''}>
-                  {#if hasImg(s)}
-                    <img src={s.img} alt="" class="glyph" />
-                  {:else}
-                    {s}
-                  {/if}
-                </td>
+              {#each row.symbols as sym, i}
+                {#if selectedLetter === null || selectedLetter === i}
+                  {@const s = sym as Sym}
+                  <td
+                    class:dim={!sym || sym === ''}
+                    class:letter-cell={selected !== null}
+                    on:click|stopPropagation={selected !== null ? () => pickLetter(i) : undefined}
+                  >
+                    {#if hasImg(s)}
+                      <img src={import.meta.env.BASE_URL + s.img.replace(/^\//, '')} alt="" class="glyph" />
+                    {:else}
+                      {s}
+                    {/if}
+                  </td>
+                {/if}
               {/each}
             </tr>
           {/each}

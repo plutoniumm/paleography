@@ -68,6 +68,13 @@ h1 {
   color: var(--text);
 }
 
+.hint {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 0 0 12px;
+  min-height: 1.5em;
+}
+
 .clear {
   background: none;
   border: 1px solid var(--accent);
@@ -163,6 +170,14 @@ td.dim {
   opacity: 0.15;
 }
 
+td.letter-cell {
+  cursor: pointer;
+
+  &:hover {
+    background: color-mix(in srgb, var(--accent) 10%, var(--surface));
+  }
+}
+
 .source-arrow {
   color: var(--border);
   margin-right: 4px;
@@ -170,9 +185,6 @@ td.dim {
 }
 
 /* Kawi U+11F00–11F5F needs Noto Serif Kawi; Brahmi U+11000–1107F needs Noto Sans Brahmi */
-@supports (unicode-range: U+11F00-11F5F) {
-  td { font-family: 'Noto Serif Kawi', 'Noto Sans Brahmi', system-ui, sans-serif; }
-}
 td {
   font-family: 'Noto Serif Kawi', 'Noto Sans Brahmi', system-ui, sans-serif;
 }

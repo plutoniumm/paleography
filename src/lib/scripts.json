@@ -1,0 +1,319 @@
+{
+  "letters": [
+    "k",
+    "kh",
+    "g",
+    "gh",
+    "ṅ",
+    "c",
+    "ch",
+    "j",
+    "jh",
+    "ñ",
+    "ṭ",
+    "ṭh",
+    "ḍ",
+    "ḍh",
+    "ṇ",
+    "t",
+    "th",
+    "d",
+    "dh",
+    "n",
+    "",
+    "p",
+    "ph",
+    "b",
+    "bh",
+    "m",
+    "y",
+    "",
+    "r",
+    "",
+    "l",
+    "",
+    "",
+    "v",
+    "ś",
+    "ṣ",
+    "s",
+    "h"
+  ],
+  "scripts": [
+    {
+      "id": "brahmi",
+      "name": "Brahmi",
+      "root": "aramaic"
+    },
+    {
+      "id": "aramaic",
+      "name": "Aramaic",
+      "root": ""
+    },
+    {
+      "id": "gupta",
+      "name": "Gupta",
+      "root": "brahmi"
+    },
+    {
+      "id": "siddham",
+      "name": "Siddham",
+      "root": "gupta"
+    },
+    {
+      "id": "tamizhi",
+      "name": "Tamizhi",
+      "root": "brahmi"
+    },
+    {
+      "id": "gaudi",
+      "name": "Gaudi",
+      "root": "gupta"
+    },
+    {
+      "id": "sharda",
+      "name": "Sharda",
+      "root": "gupta"
+    },
+    {
+      "id": "devanagari",
+      "name": "Devanagari",
+      "root": "siddham"
+    },
+    {
+      "id": "eastnagari",
+      "name": "Eastnagari",
+      "root": "gaudi"
+    },
+    {
+      "id": "gurmukhi",
+      "name": "Gurmukhi",
+      "root": "sharda"
+    },
+    {
+      "id": "gujarati",
+      "name": "Gujarati",
+      "root": "devanagari"
+    },
+    {
+      "id": "odia",
+      "name": "Odia",
+      "root": "gaudi"
+    },
+    {
+      "id": "pallava",
+      "name": "Pallava",
+      "root": "brahmi"
+    },
+    {
+      "id": "grantha",
+      "name": "Grantha",
+      "root": "pallava"
+    },
+    {
+      "id": "tamil",
+      "name": "Tamil",
+      "root": "tamizhi"
+    },
+    {
+      "id": "telugu",
+      "name": "Telugu",
+      "root": "brahmi"
+    },
+    {
+      "id": "kannada",
+      "name": "Kannada",
+      "root": "pallava"
+    },
+    {
+      "id": "malayalam",
+      "name": "Malayalam",
+      "root": "grantha"
+    },
+    {
+      "id": "sinhala",
+      "name": "Sinhala",
+      "root": "grantha"
+    },
+    {
+      "id": "tibetan",
+      "name": "Tibetan",
+      "root": "gupta"
+    },
+    {
+      "id": "phagspa",
+      "name": "ʼPhagspa",
+      "root": "tibetan"
+    },
+    {
+      "id": "meitei_mayek",
+      "name": "Meitei Mayek",
+      "root": "gupta"
+    },
+    {
+      "id": "lepcha",
+      "name": "Lepcha",
+      "root": "tibetan"
+    },
+    {
+      "id": "limbu",
+      "name": "Limbu",
+      "root": "lepcha"
+    },
+    {
+      "id": "tirhuta",
+      "name": "Tirhuta",
+      "root": "gaudi"
+    },
+    {
+      "id": "kaithi",
+      "name": "Kaithi",
+      "root": "devanagari"
+    },
+    {
+      "id": "sylheti_nagari",
+      "name": "Sylheti Nagari",
+      "root": "kaithi"
+    },
+    {
+      "id": "chakma",
+      "name": "Chakma",
+      "root": "burmese"
+    },
+    {
+      "id": "burmese",
+      "name": "Burmese",
+      "root": "mon"
+    },
+    {
+      "id": "khmer",
+      "name": "Khmer",
+      "root": "pallava"
+    },
+    {
+      "id": "thai",
+      "name": "Thai",
+      "root": "khmer"
+    },
+    {
+      "id": "lao",
+      "name": "Lao",
+      "root": "khmer"
+    },
+    {
+      "id": "cham",
+      "name": "Cham",
+      "root": "pallava"
+    },
+    {
+      "id": "balinese",
+      "name": "Balinese",
+      "root": "kawi"
+    },
+    {
+      "id": "javanese",
+      "name": "Javanese",
+      "root": "kawi"
+    },
+    {
+      "id": "sundanese",
+      "name": "Sundanese",
+      "root": "kawi"
+    },
+    {
+      "id": "kawi",
+      "name": "Kawi",
+      "root": "pallava"
+    },
+    {
+      "id": "baybayin",
+      "name": "Baybayin",
+      "root": "kawi"
+    },
+    {
+      "id": "buginese",
+      "name": "Buginese",
+      "root": "kawi"
+    },
+    {
+      "id": "batak",
+      "name": "Batak",
+      "root": "kawi"
+    },
+    {
+      "id": "tai_tham",
+      "name": "Tai Tham",
+      "root": "pallava"
+    },
+    {
+      "id": "modi",
+      "name": "Modi",
+      "root": "devanagari"
+    },
+    {
+      "id": "newa",
+      "name": "Newa",
+      "root": "gaudi"
+    },
+    {
+      "id": "takri",
+      "name": "Takri",
+      "root": "sharda"
+    },
+    {
+      "id": "khojki",
+      "name": "Khojki",
+      "root": "sharda"
+    },
+    {
+      "id": "hanunuo",
+      "name": "Hanunóo",
+      "root": "kawi"
+    },
+    {
+      "id": "buhid",
+      "name": "Buhid",
+      "root": "kawi"
+    },
+    {
+      "id": "tagbanwa",
+      "name": "Tagbanwa",
+      "root": "kawi"
+    },
+    {
+      "id": "mon",
+      "name": "Mon",
+      "root": "pallava"
+    },
+    {
+      "id": "ahom",
+      "name": "Ahom",
+      "root": "burmese"
+    },
+    {
+      "id": "tai_viet",
+      "name": "Tai Viet",
+      "root": "thai"
+    },
+    {
+      "id": "new_tai_lue",
+      "name": "New Tai Lue",
+      "root": "tai_tham"
+    },
+    {
+      "id": "rejang",
+      "name": "Rejang",
+      "root": "kawi"
+    },
+    {
+      "id": "soyombo",
+      "name": "Soyombo",
+      "root": "tibetan"
+    },
+    {
+      "id": "zanabazar_square",
+      "name": "Zanabazar Square",
+      "root": "phagspa"
+    }
+  ]
+}
