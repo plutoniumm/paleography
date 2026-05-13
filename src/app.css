@@ -1,0 +1,187 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #0f0f11;
+  --surface: #18181c;
+  --border: #2a2a30;
+  --text: #e8e6f0;
+  --muted: #6b6880;
+  --accent: #7c6fe0;
+  --script-col: 140px;
+
+  font: 14px/1.5 system-ui, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+}
+
+/* View Transitions */
+::view-transition-old(root), ::view-transition-new(root) {
+  animation-duration: 0.2s;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 20px;
+}
+
+.tab {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 16px;
+  margin-bottom: -1px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+
+  &:hover:not(:disabled) {
+    color: var(--text);
+  }
+
+  &.active {
+    color: var(--text);
+    border-bottom-color: var(--accent);
+  }
+}
+
+.tab-disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 12px;
+  color: var(--text);
+}
+
+.clear {
+  background: none;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 16px;
+  display: block;
+  transition: background 0.15s, color 0.15s;
+
+  &:hover {
+    background: color-mix(in srgb, var(--accent) 15%, transparent);
+    color: var(--text);
+  }
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+
+th, td {
+  padding: 6px 10px;
+  text-align: center;
+  border: 1px solid var(--border);
+  font-size: 16px;
+}
+
+thead th {
+  background: var(--surface);
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--muted);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+th.source-col, td.source-col {
+  text-align: right;
+  min-width: 100px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+th.script-col, td.script-col {
+  text-align: left;
+  min-width: var(--script-col);
+  font-size: 13px;
+  position: sticky;
+  left: 0;
+  background: var(--bg);
+  z-index: 2;
+}
+
+thead th.script-col {
+  background: var(--surface);
+  z-index: 3;
+}
+
+tbody tr {
+  cursor: pointer;
+  user-select: none;
+}
+
+tbody tr:hover td,
+tbody tr.selected td {
+  background: var(--surface);
+}
+
+tbody tr:hover td.script-col,
+tbody tr.selected td.script-col {
+  background: var(--surface);
+}
+
+tbody tr.selected td:first-child {
+  box-shadow: inset 3px 0 0 var(--accent);
+}
+
+tbody tr.selected td.script-col .name {
+  color: var(--text);
+  font-weight: 600;
+}
+
+td.dim {
+  opacity: 0.15;
+}
+
+.source-arrow {
+  color: var(--border);
+  margin-right: 4px;
+  font-size: 14px;
+}
+
+/* Kawi U+11F00–11F5F needs Noto Serif Kawi; Brahmi U+11000–1107F needs Noto Sans Brahmi */
+@supports (unicode-range: U+11F00-11F5F) {
+  td { font-family: 'Noto Serif Kawi', 'Noto Sans Brahmi', system-ui, sans-serif; }
+}
+td {
+  font-family: 'Noto Serif Kawi', 'Noto Sans Brahmi', system-ui, sans-serif;
+}
+
+img.glyph {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  filter: invert(1);
+  display: block;
+  margin: 0 auto;
+}
