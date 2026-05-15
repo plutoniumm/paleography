@@ -5,7 +5,21 @@
       "source_type": "inscription",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Proto-Sinaitic_script",
       "notes": "The oldest known alphabetic writing system, c. 1900–1500 BCE, found in the Sinai Peninsula. Ancestor of both Phoenician (Latin/European family) and Aramaic (Brahmic/South Asian family). Signs derived from Egyptian hieroglyphs. No Unicode block exists.",
-      "reference_images": []
+      "reference_images": [
+        {
+          "path": "/img/sources/proto_sinaitic_inscription.jpg",
+          "caption": "Proto-Sinaitic inscription No. 355 from Serabit el-Khadim, Sinai (c. 1550–1450 BCE), one of the earliest known alphabetic texts"
+        },
+        {
+          "path": "/img/sources/proto_sinaitic_inscription2.jpg",
+          "caption": "Wadi el-Hol inscription from Upper Egypt (c. 1900–1800 BCE), among the oldest proposed Proto-Sinaitic texts"
+        }
+      ],
+      "trace_samples": [
+        "/img/proto_sinaitic/m.svg",
+        "/img/proto_sinaitic/n.svg",
+        "/img/proto_sinaitic/h.svg"
+      ]
     },
     "aramaic": {
       "unicode_block": "Imperial Aramaic, U+10840–U+1085F",
@@ -531,7 +545,21 @@
       "source_type": "inscription",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Vatteluttu_alphabet",
       "notes": "An abugida used in Tamil Nadu and Kerala from approximately the 6th to 13th centuries CE, evolved from Tamil-Brahmi. Notable for its rounded letterforms; served as a transitional script toward early Malayalam. No Unicode block has been assigned.",
-      "reference_images": []
+      "reference_images": [
+        {
+          "path": "/img/sources/vatteluttu_inscription.jpg",
+          "caption": "Velvikudi copper plate grant (8th century CE) — one of the longest surviving Vatteluttu inscriptions, issued by the Pandya king Nedunjadaiyan"
+        },
+        {
+          "path": "/img/sources/vatteluttu_inscription2.jpg",
+          "caption": "Detail of the Velvikudi grant, lines 47–56, showing the characteristic rounded Vatteluttu letterforms"
+        }
+      ],
+      "trace_samples": [
+        "/img/vatteluttu/k.png",
+        "/img/vatteluttu/m.png",
+        "/img/vatteluttu/r.png"
+      ]
     },
     "tulu_tigalari": {
       "unicode_block": "Tulu-Tigalari, U+11380–113FF",
@@ -546,7 +574,21 @@
       "source_type": "inscription",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Proto-Sinaitic_script",
       "notes": "The oldest known alphabetic writing system, c. 1900–1500 BCE, found in the Sinai Peninsula. Ancestor of both Phoenician (Latin/European family) and Aramaic (Brahmic/South Asian family). Signs derived from Egyptian hieroglyphs. No Unicode block exists.",
-      "reference_images": []
+      "reference_images": [
+        {
+          "path": "/img/sources/proto_sinaitic_inscription.jpg",
+          "caption": "Proto-Sinaitic inscription No. 355 from Serabit el-Khadim, Sinai (c. 1550–1450 BCE)"
+        },
+        {
+          "path": "/img/sources/proto_sinaitic_inscription2.jpg",
+          "caption": "Wadi el-Hol inscription from Upper Egypt (c. 1900–1800 BCE)"
+        }
+      ],
+      "trace_samples": [
+        "/img/proto_sinaitic/m.svg",
+        "/img/proto_sinaitic/n.svg",
+        "/img/proto_sinaitic/h.svg"
+      ]
     },
     "phoenician": {
       "unicode_block": "Phoenician, U+10900–U+1091F",

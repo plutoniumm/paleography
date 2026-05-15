@@ -7,7 +7,7 @@
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "BASE=/paleography vite build && npx gh-pages -d dist"
+    "deploy": "BASE=/paleography vite build && npx gh-pages -d build"
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^3.0.10",
@@ -17,8 +17,5 @@
     "svelte-check": "^4.4.8",
     "typescript": "~6.0.2",
     "vite": "^8.0.12"
-  },
-  "dependencies": {
-    "@sveltejs/adapter-node": "^5.5.4"
   }
 }

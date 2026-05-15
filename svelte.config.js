@@ -1,9 +1,9 @@
-import adapter from '@sveltejs/adapter-node';
+import adapter from '@sveltejs/adapter-static';
 
 /** @type {import('@sveltejs/kit').Config} */
 export default {
   kit: {
-    adapter: adapter({ out: 'dist' }),
+    adapter: adapter(),
     files: {
       assets: 'public'
     }
