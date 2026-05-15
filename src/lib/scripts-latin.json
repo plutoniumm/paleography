@@ -1,0 +1,168 @@
+{
+  "letters": [
+    "ʾ",
+    "b",
+    "g",
+    "d",
+    "h",
+    "w",
+    "z",
+    "ḥ",
+    "ṭ",
+    "y",
+    "k",
+    "l",
+    "m",
+    "n",
+    "s",
+    "ʿ",
+    "p",
+    "ṣ",
+    "q",
+    "r",
+    "š",
+    "t"
+  ],
+  "scripts": [
+    {
+      "id": "proto_sinaitic",
+      "name": "Proto-Sinaitic",
+      "root": ""
+    },
+    {
+      "id": "phoenician",
+      "name": "Phoenician",
+      "root": "proto_sinaitic"
+    },
+    {
+      "id": "punic",
+      "name": "Punic",
+      "root": "phoenician"
+    },
+    {
+      "id": "greek",
+      "name": "Greek",
+      "root": "phoenician"
+    },
+    {
+      "id": "etruscan",
+      "name": "Etruscan",
+      "root": "greek"
+    },
+    {
+      "id": "latin",
+      "name": "Latin",
+      "root": "etruscan"
+    },
+    {
+      "id": "oscan",
+      "name": "Oscan",
+      "root": "etruscan"
+    },
+    {
+      "id": "umbrian",
+      "name": "Umbrian",
+      "root": "etruscan"
+    },
+    {
+      "id": "runic",
+      "name": "Runic (Elder Futhark)",
+      "root": "latin"
+    },
+    {
+      "id": "younger_futhark",
+      "name": "Younger Futhark",
+      "root": "runic"
+    },
+    {
+      "id": "anglo_saxon_futhorc",
+      "name": "Anglo-Saxon Futhorc",
+      "root": "runic"
+    },
+    {
+      "id": "old_hungarian",
+      "name": "Old Hungarian",
+      "root": "runic"
+    },
+    {
+      "id": "fraktur",
+      "name": "Fraktur",
+      "root": "latin"
+    },
+    {
+      "id": "ogham",
+      "name": "Ogham",
+      "root": "latin"
+    },
+    {
+      "id": "adlam",
+      "name": "Adlam",
+      "root": "latin"
+    },
+    {
+      "id": "gothic",
+      "name": "Gothic",
+      "root": "greek"
+    },
+    {
+      "id": "glagolitic",
+      "name": "Glagolitic",
+      "root": "greek"
+    },
+    {
+      "id": "cyrillic",
+      "name": "Cyrillic",
+      "root": "glagolitic"
+    },
+    {
+      "id": "old_permic",
+      "name": "Old Permic",
+      "root": "cyrillic"
+    },
+    {
+      "id": "coptic",
+      "name": "Coptic",
+      "root": "greek"
+    },
+    {
+      "id": "armenian",
+      "name": "Armenian",
+      "root": "greek"
+    },
+    {
+      "id": "georgian",
+      "name": "Georgian",
+      "root": "armenian"
+    },
+    {
+      "id": "caucasian_albanian",
+      "name": "Caucasian Albanian",
+      "root": "armenian"
+    },
+    {
+      "id": "lycian",
+      "name": "Lycian",
+      "root": "greek"
+    },
+    {
+      "id": "lydian",
+      "name": "Lydian",
+      "root": "greek"
+    },
+    {
+      "id": "carian",
+      "name": "Carian",
+      "root": "greek"
+    },
+    {
+      "id": "cypriot",
+      "name": "Cypriot",
+      "root": "greek"
+    },
+    {
+      "id": "bactrian",
+      "name": "Bactrian (Greek-script)",
+      "root": "greek"
+    }
+  ]
+}

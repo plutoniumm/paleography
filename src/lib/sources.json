@@ -1,0 +1,627 @@
+{
+  "aramaic": {
+    "proto_sinaitic": {
+      "unicode_block": null,
+      "source_type": "inscription",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Proto-Sinaitic_script",
+      "notes": "The oldest known alphabetic writing system, c. 1900–1500 BCE, found in the Sinai Peninsula. Ancestor of both Phoenician (Latin/European family) and Aramaic (Brahmic/South Asian family). Signs derived from Egyptian hieroglyphs. No Unicode block exists.",
+      "reference_images": []
+    },
+    "aramaic": {
+      "unicode_block": "Imperial Aramaic, U+10840–U+1085F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aramaic_alphabet",
+      "notes": "Characters sourced from the Imperial Aramaic Unicode block (U+10840–U+1085F), which encodes the 22-letter Aramaic abjad used as an official script of the Achaemenid Empire."
+    },
+    "brahmi": {
+      "unicode_block": "Brahmi, U+11000–U+1107F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brahmi_script",
+      "notes": "Characters sourced from the Brahmi Unicode block (U+11000–U+1107F), encoding the ancient Brahmi abugida from which most South and Southeast Asian scripts descend."
+    },
+    "gupta": {
+      "unicode_block": null,
+      "source_type": "wikipedia_image",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gupta_script",
+      "notes": "Glyph images sourced from Wikipedia's Gupta script article. The Gupta script has no dedicated Unicode block; it is treated as a stylistic variant of Brahmi in the Unicode Standard.",
+      "reference_images": [
+        {
+          "path": "/img/sources/gupta_chart.jpg",
+          "caption": "Brahmi–Gupta–Devanagari evolution chart showing the development of the Gupta script from Brahmi"
+        },
+        {
+          "path": "/img/sources/gupta_inscription.jpg",
+          "caption": "Allahabad stone pillar inscription of Samudragupta (4th century CE), a key monument in Gupta script"
+        }
+      ],
+      "trace_samples": [
+        "/img/gupta/k.png",
+        "/img/gupta/g.png",
+        "/img/gupta/c.png",
+        "/img/gupta/t.png",
+        "/img/gupta/n.png",
+        "/img/gupta/p.png",
+        "/img/gupta/m.png",
+        "/img/gupta/r.png",
+        "/img/gupta/s.png"
+      ]
+    },
+    "siddham": {
+      "unicode_block": "Siddham, U+11580–U+115FF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Siddha%E1%B9%83_script",
+      "notes": "Characters sourced from the Siddham Unicode block (U+11580–U+115FF), encoding the medieval calligraphic script used for Buddhist Sanskrit manuscripts in East Asia."
+    },
+    "tamizhi": {
+      "unicode_block": null,
+      "source_type": "inscription",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tamil-Brahmi",
+      "notes": "Custom SVG glyphs hand-traced from the 'History of Tamil Script' evolution chart at Dakshina Chitra museum, Chennai; the 3rd century BC geometric forms were used. No dedicated Unicode block exists for this archaic Tamil-Brahmi variant.",
+      "reference_images": [
+        {
+          "path": "/img/sources/tamizhi_inscription.jpg",
+          "caption": "Jambai Tamil-Brahmi cave inscription, one of the earliest Tamil-Brahmi records, 3rd century BC"
+        },
+        {
+          "path": "/img/sources/tamizhi_inscription2.jpg",
+          "caption": "Mangulam Tamil-Brahmi inscription, discovered by Robert Sewell in 1882, now at Dakshina Chitra, Chennai"
+        }
+      ],
+      "trace_samples": [
+        "/img/tamizhi/k.svg",
+        "/img/tamizhi/ng.svg",
+        "/img/tamizhi/c.svg",
+        "/img/tamizhi/t.svg",
+        "/img/tamizhi/n.svg",
+        "/img/tamizhi/p.svg",
+        "/img/tamizhi/m.svg",
+        "/img/tamizhi/r.svg",
+        "/img/tamizhi/v.svg"
+      ]
+    },
+    "gaudi": {
+      "unicode_block": null,
+      "source_type": "inscription",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gaudi_script",
+      "notes": "SVG glyphs traced from historical inscriptions of the Gauḍī script (10th–14th century CE, eastern India). No dedicated Unicode block exists; modern descendants Bengali and Odia are encoded separately.",
+      "reference_images": [
+        {
+          "path": "/img/sources/gaudi_inscription.jpg",
+          "caption": "Silver coin with Gauḍī script from the Harikela Kingdom, 9th–13th century CE, Indian Museum, Kolkata"
+        },
+        {
+          "path": "/img/sources/gaudi_inscription2.jpg",
+          "caption": "Silver coin of Danujamarddana inscribed in Gauḍī script, 1417 CE"
+        }
+      ],
+      "trace_samples": [
+        "/img/gaudi/k.svg",
+        "/img/gaudi/g.svg",
+        "/img/gaudi/c.svg",
+        "/img/gaudi/t.svg",
+        "/img/gaudi/n.svg",
+        "/img/gaudi/p.svg",
+        "/img/gaudi/m.svg",
+        "/img/gaudi/r.svg",
+        "/img/gaudi/v.svg"
+      ]
+    },
+    "sharda": {
+      "unicode_block": "Sharada, U+11180–U+111DF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sharada_script",
+      "notes": "Characters sourced from the Sharada Unicode block (U+11180–U+111DF), encoding the historic script used for Sanskrit and Kashmiri in Kashmir from the 8th century onward."
+    },
+    "devanagari": {
+      "unicode_block": "Devanagari, U+0900–U+097F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Devanagari",
+      "notes": "Characters sourced from the Devanagari Unicode block (U+0900–U+097F), the widely used script for Hindi, Sanskrit, Marathi, and dozens of other South Asian languages."
+    },
+    "eastnagari": {
+      "unicode_block": "Bengali, U+0980–U+09FF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bengali%E2%80%93Assamese_script",
+      "notes": "Characters sourced from the Bengali Unicode block (U+0980–U+09FF), which encodes the Eastern Nagari (Bengali–Assamese) script used for Bengali, Assamese, and related languages."
+    },
+    "gurmukhi": {
+      "unicode_block": "Gurmukhi, U+0A00–U+0A7F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gurmukhi",
+      "notes": "Characters sourced from the Gurmukhi Unicode block (U+0A00–U+0A7F), the script standardized by Guru Angad Dev for writing Punjabi and the Sikh scriptures."
+    },
+    "gujarati": {
+      "unicode_block": "Gujarati, U+0A80–U+0AFF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gujarati_script",
+      "notes": "Characters sourced from the Gujarati Unicode block (U+0A80–U+0AFF), the script derived from Devanagari used to write the Gujarati language."
+    },
+    "odia": {
+      "unicode_block": "Oriya, U+0B00–U+0B7F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Odia_script",
+      "notes": "Characters sourced from the Oriya Unicode block (U+0B00–U+0B7F), which encodes the Odia script descended from the Gauḍī branch of Brahmic scripts."
+    },
+    "pallava": {
+      "unicode_block": null,
+      "source_type": "inscription",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pallava_script",
+      "notes": "Glyphs traced from Pallava-period stone inscriptions (4th–9th century CE, South India). The script has no dedicated Unicode block; a proposal for U+11F60–U+11F7F has been submitted to Unicode but not yet accepted.",
+      "reference_images": [
+        {
+          "path": "/img/sources/pallava_inscription.jpg",
+          "caption": "Pallava script carved at the 8th-century Kailasanatha temple, Kanchipuram, Tamil Nadu"
+        },
+        {
+          "path": "/img/sources/pallava_inscription2.jpg",
+          "caption": "Ciaruteun inscription, a 5th-century Pallava stone inscription discovered in West Java, Indonesia"
+        }
+      ],
+      "trace_samples": [
+        "/img/pallava/k.png",
+        "/img/pallava/g.png",
+        "/img/pallava/c.png",
+        "/img/pallava/t.png",
+        "/img/pallava/n.png",
+        "/img/pallava/p.png",
+        "/img/pallava/m.png",
+        "/img/pallava/r.png",
+        "/img/pallava/v.png"
+      ]
+    },
+    "grantha": {
+      "unicode_block": "Grantha, U+11300–U+1137F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Grantha_script",
+      "notes": "Characters sourced from the Grantha Unicode block (U+11300–U+1137F), encoding the historic South Indian script used for Sanskrit manuscripts from the 6th to 19th century."
+    },
+    "tamil": {
+      "unicode_block": "Tamil, U+0B80–U+0BFF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tamil_script",
+      "notes": "Characters sourced from the Tamil Unicode block (U+0B80–U+0BFF), encoding the classical script of the Tamil language still in widespread use today."
+    },
+    "telugu": {
+      "unicode_block": "Telugu, U+0C00–U+0C7F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Telugu_script",
+      "notes": "Characters sourced from the Telugu Unicode block (U+0C00–U+0C7F), encoding the script used for the Telugu language of Andhra Pradesh and Telangana."
+    },
+    "kannada": {
+      "unicode_block": "Kannada, U+0C80–U+0CFF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kannada_script",
+      "notes": "Characters sourced from the Kannada Unicode block (U+0C80–U+0CFF), encoding the script used for the Kannada language of Karnataka, descended from Pallava via Old Kannada."
+    },
+    "malayalam": {
+      "unicode_block": "Malayalam, U+0D00–U+0D7F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Malayalam_script",
+      "notes": "Characters sourced from the Malayalam Unicode block (U+0D00–U+0D7F), encoding the script of Kerala descended from the Grantha branch of Brahmic scripts."
+    },
+    "sinhala": {
+      "unicode_block": "Sinhala, U+0D80–U+0DFF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sinhala_script",
+      "notes": "Characters sourced from the Sinhala Unicode block (U+0D80–U+0DFF), encoding the script of Sri Lanka derived from the Grantha branch of South Indian Brahmic scripts."
+    },
+    "tibetan": {
+      "unicode_block": "Tibetan, U+0F00–U+0FFF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tibetan_script",
+      "notes": "Characters sourced from the Tibetan Unicode block (U+0F00–U+0FFF), encoding the abugida used for Classical Tibetan, Dzongkha, and other Tibeto-Burman languages."
+    },
+    "phagspa": {
+      "unicode_block": "Phags-pa, U+A840–U+A87F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phags-pa_script",
+      "notes": "Characters sourced from the Phags-pa Unicode block (U+A840–U+A87F), encoding the script commissioned by Kublai Khan in 1269 CE based on the Tibetan alphabet."
+    },
+    "meitei_mayek": {
+      "unicode_block": "Meetei Mayek, U+ABC0–U+ABFF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Meitei_Mayek",
+      "notes": "Characters sourced from the Meetei Mayek Unicode block (U+ABC0–U+ABFF), encoding the indigenous script of the Meitei people of Manipur, India."
+    },
+    "lepcha": {
+      "unicode_block": "Lepcha, U+1C00–U+1C4F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lepcha_script",
+      "notes": "Characters sourced from the Lepcha Unicode block (U+1C00–U+1C4F), encoding the Róng script of the Lepcha people of Sikkim, derived from the Tibetan script."
+    },
+    "limbu": {
+      "unicode_block": "Limbu, U+1900–U+194F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Limbu_script",
+      "notes": "Characters sourced from the Limbu Unicode block (U+1900–U+194F), encoding the Sirijonga script used for the Limbu language of eastern Nepal and Sikkim."
+    },
+    "tirhuta": {
+      "unicode_block": "Tirhuta, U+11480–U+114DF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tirhuta_script",
+      "notes": "Characters sourced from the Tirhuta Unicode block (U+11480–U+114DF), encoding the Mithilakshar script used historically for Maithili in Bihar and Nepal."
+    },
+    "kaithi": {
+      "unicode_block": "Kaithi, U+11080–U+110CF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kaithi_script",
+      "notes": "Characters sourced from the Kaithi Unicode block (U+11080–U+110CF), encoding the historical script of the Kayastha communities used widely in northern India for legal and administrative records."
+    },
+    "sylheti_nagari": {
+      "unicode_block": "Syloti Nagri, U+A800–U+A82F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sylheti_Nagri",
+      "notes": "Characters sourced from the Syloti Nagri Unicode block (U+A800–U+A82F), encoding the traditional script for the Sylheti language of Bangladesh and northeast India."
+    },
+    "chakma": {
+      "unicode_block": "Chakma, U+11100–U+1114F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chakma_script",
+      "notes": "Characters sourced from the Chakma Unicode block (U+11100–U+1114F), encoding the Ojhopath script used by the Chakma people of the Chittagong Hill Tracts and northeast India."
+    },
+    "burmese": {
+      "unicode_block": "Myanmar, U+1000–U+109F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mon%E2%80%93Burmese_script",
+      "notes": "Characters sourced from the Myanmar Unicode block (U+1000–U+109F), which encodes Burmese and related scripts including Mon, Shan, and Karen scripts."
+    },
+    "khmer": {
+      "unicode_block": "Khmer, U+1780–U+17FF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khmer_script",
+      "notes": "Characters sourced from the Khmer Unicode block (U+1780–U+17FF), encoding the abugida of Cambodia descended from the Pallava branch of Brahmic scripts."
+    },
+    "thai": {
+      "unicode_block": "Thai, U+0E00–U+0E7F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thai_script",
+      "notes": "Characters sourced from the Thai Unicode block (U+0E00–U+0E7F), encoding the script created by King Ramkhamhaeng in 1283 CE, derived from the Khmer script."
+    },
+    "lao": {
+      "unicode_block": "Lao, U+0E80–U+0EFF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lao_script",
+      "notes": "Characters sourced from the Lao Unicode block (U+0E80–U+0EFF), encoding the abugida of Laos closely related to the Thai script and descending from Khmer."
+    },
+    "cham": {
+      "unicode_block": "Cham, U+AA00–U+AA5F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cham_script",
+      "notes": "Characters sourced from the Cham Unicode block (U+AA00–U+AA5F), encoding the script of the Cham people of Vietnam and Cambodia, descended from the Pallava script."
+    },
+    "balinese": {
+      "unicode_block": "Balinese, U+1B00–U+1B7F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Balinese_script",
+      "notes": "Characters sourced from the Balinese Unicode block (U+1B00–U+1B7F), encoding the Aksara Bali script of Bali, Indonesia, descended from the Kawi script."
+    },
+    "javanese": {
+      "unicode_block": "Javanese, U+A980–U+A9DF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Javanese_script",
+      "notes": "Characters sourced from the Javanese Unicode block (U+A980–U+A9DF), encoding the Hanacaraka script of Java, Indonesia, descended from the Kawi script."
+    },
+    "sundanese": {
+      "unicode_block": "Sundanese, U+1B80–U+1BBF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sundanese_alphabet",
+      "notes": "Characters sourced from the Sundanese Unicode block (U+1B80–U+1BBF), encoding the script of the Sundanese people of West Java, descended from the Kawi script."
+    },
+    "kawi": {
+      "unicode_block": "Kawi, U+11F00–U+11F5F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kawi_script",
+      "notes": "Characters sourced from the Kawi Unicode block (U+11F00–U+11F5F, added in Unicode 15.0), encoding the Old Javanese script ancestor of most Southeast Asian island scripts."
+    },
+    "baybayin": {
+      "unicode_block": "Tagalog, U+1700–U+171F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baybayin",
+      "notes": "Characters sourced from the Tagalog Unicode block (U+1700–U+171F), encoding the pre-Spanish Philippine script Baybayin (Alibata) descended from the Kawi script."
+    },
+    "buginese": {
+      "unicode_block": "Buginese, U+1A00–U+1A1F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lontara_script",
+      "notes": "Characters sourced from the Buginese Unicode block (U+1A00–U+1A1F), encoding the Lontara script of the Bugis and Makassar peoples of Sulawesi, Indonesia."
+    },
+    "batak": {
+      "unicode_block": "Batak, U+1BC0–U+1BFF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Batak_script",
+      "notes": "Characters sourced from the Batak Unicode block (U+1BC0–U+1BFF), encoding the scripts of the Batak peoples of Sumatra, Indonesia, derived from the Kawi tradition."
+    },
+    "tai_tham": {
+      "unicode_block": "Tai Tham, U+1A20–U+1AAF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tai_Tham_script",
+      "notes": "Characters sourced from the Tai Tham Unicode block (U+1A20–U+1AAF), encoding the Lanna script used for Northern Thai, Tai Lü, and Buddhist liturgical texts."
+    },
+    "modi": {
+      "unicode_block": "Modi, U+11600–U+1165F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Modi_script",
+      "notes": "Characters sourced from the Modi Unicode block (U+11600–U+1165F), encoding the cursive script of Maharashtra used extensively for administrative records from the 12th to 20th century."
+    },
+    "newa": {
+      "unicode_block": "Newa, U+11400–U+1147F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pracalit_script",
+      "notes": "Characters sourced from the Newa Unicode block (U+11400–U+1147F), encoding the Pracalit (Nepal Lipi) script of the Newar people of the Kathmandu Valley."
+    },
+    "takri": {
+      "unicode_block": "Takri, U+11680–U+116CF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Takri_alphabet",
+      "notes": "Characters sourced from the Takri Unicode block (U+11680–U+116CF), encoding the historical Ṭākarī script of Himachal Pradesh and Jammu, descended from the Sharada script."
+    },
+    "khojki": {
+      "unicode_block": "Khojki, U+11200–U+1124F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khojki_script",
+      "notes": "Characters sourced from the Khojki Unicode block (U+11200–U+1124F), encoding the script of the Khoja community of Sindh and Gujarat, descended from the Sharada tradition."
+    },
+    "hanunuo": {
+      "unicode_block": "Hanunoo, U+1720–U+173F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hanunoo_script",
+      "notes": "Characters sourced from the Hanunoo Unicode block (U+1720–U+173F), encoding the pre-colonial Philippine script still used by the Hanunóo Mangyan people of Mindoro."
+    },
+    "buhid": {
+      "unicode_block": "Buhid, U+1740–U+175F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Buhid_script",
+      "notes": "Characters sourced from the Buhid Unicode block (U+1740–U+175F), encoding the indigenous script of the Buhid Mangyan people of Mindoro, Philippines."
+    },
+    "tagbanwa": {
+      "unicode_block": "Tagbanwa, U+1760–U+177F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tagbanwa_script",
+      "notes": "Characters sourced from the Tagbanwa Unicode block (U+1760–U+177F), encoding the indigenous script of the Tagbanwa people of Palawan, Philippines."
+    },
+    "mon": {
+      "unicode_block": "Myanmar, U+1000–U+109F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mon%E2%80%93Burmese_script",
+      "notes": "Mon characters are encoded within the Myanmar Unicode block (U+1000–U+109F), which contains extensions for Mon at U+105A–U+1060; the Mon script is the ancestor of the Burmese script."
+    },
+    "ahom": {
+      "unicode_block": "Ahom, U+11700–U+1174F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ahom_script",
+      "notes": "Characters sourced from the Ahom Unicode block (U+11700–U+1174F), encoding the script brought by the Ahom people from Southeast Asia to Assam in the 13th century."
+    },
+    "tai_viet": {
+      "unicode_block": "Tai Viet, U+AA80–U+AADF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tai_Viet_script",
+      "notes": "Characters sourced from the Tai Viet Unicode block (U+AA80–U+AADF), encoding the script of the Tai Dam, Tai Dón, and Tai Daeng peoples of Vietnam and Thailand."
+    },
+    "new_tai_lue": {
+      "unicode_block": "New Tai Lue, U+1980–U+19DF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/New_Tai_Lue_script",
+      "notes": "Characters sourced from the New Tai Lue Unicode block (U+1980–U+19DF), encoding the reformed Tai Lü script used in Xishuangbanna, Yunnan, China."
+    },
+    "rejang": {
+      "unicode_block": "Rejang, U+A930–U+A95F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rejang_script",
+      "notes": "Characters sourced from the Rejang Unicode block (U+A930–U+A95F), encoding the Ka-Ga-Nga script of the Rejang people of southwest Sumatra, Indonesia."
+    },
+    "soyombo": {
+      "unicode_block": "Soyombo, U+11A50–U+11AAF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Soyombo_script",
+      "notes": "Characters sourced from the Soyombo Unicode block (U+11A50–U+11AAF), encoding the script created by Zanabazar in 1686 CE for Mongolian, Tibetan, and Sanskrit."
+    },
+    "zanabazar_square": {
+      "unicode_block": "Zanabazar Square, U+11A00–U+11A4F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zanabazar_square_script",
+      "notes": "Characters sourced from the Zanabazar Square Unicode block (U+11A00–U+11A4F), encoding a square-form script also created by Zanabazar based on the Phags-pa and Tibetan traditions."
+    },
+    "vatteluttu": {
+      "unicode_block": null,
+      "source_type": "inscription",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vatteluttu_alphabet",
+      "notes": "An abugida used in Tamil Nadu and Kerala from approximately the 6th to 13th centuries CE, evolved from Tamil-Brahmi. Notable for its rounded letterforms; served as a transitional script toward early Malayalam. No Unicode block has been assigned.",
+      "reference_images": []
+    },
+    "tulu_tigalari": {
+      "unicode_block": "Tulu-Tigalari, U+11380–113FF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tigalari_script",
+      "notes": "A script used along the Tulu Nadu coast of Karnataka and Kerala for Tulu, Sanskrit, and Malayalam texts. Evolved from Grantha script, c. 13th–14th century CE. Added to Unicode 16.0 (2024) at U+11380–U+113FF."
+    }
+  },
+  "latin": {
+    "proto_sinaitic": {
+      "unicode_block": null,
+      "source_type": "inscription",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Proto-Sinaitic_script",
+      "notes": "The oldest known alphabetic writing system, c. 1900–1500 BCE, found in the Sinai Peninsula. Ancestor of both Phoenician (Latin/European family) and Aramaic (Brahmic/South Asian family). Signs derived from Egyptian hieroglyphs. No Unicode block exists.",
+      "reference_images": []
+    },
+    "phoenician": {
+      "unicode_block": "Phoenician, U+10900–U+1091F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenician_alphabet",
+      "notes": "Characters sourced from the Phoenician Unicode block (U+10900–U+1091F), encoding the 22-letter Semitic abjad from which most alphabetic writing systems worldwide descend."
+    },
+    "paleo_hebrew": {
+      "unicode_block": "Phoenician, U+10900–U+1091F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paleo-Hebrew_alphabet",
+      "notes": "Characters sourced from the Phoenician Unicode block (U+10900–U+1091F); the Paleo-Hebrew alphabet was unified with Phoenician in Unicode 5.0 as the scripts share identical letter forms."
+    },
+    "hebrew": {
+      "unicode_block": "Hebrew, U+0590–U+05FF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hebrew_alphabet",
+      "notes": "Characters sourced from the Hebrew Unicode block (U+0590–U+05FF), encoding the 22-letter square-form Assyrian/Aramaic-derived script used for the Hebrew language."
+    },
+    "syriac": {
+      "unicode_block": "Syriac, U+0700–U+074F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Syriac_alphabet",
+      "notes": "Characters sourced from the Syriac Unicode block (U+0700–U+074F), encoding the cursive Aramaic-derived abjad used for Classical Syriac and modern Assyrian Neo-Aramaic."
+    },
+    "greek": {
+      "unicode_block": "Greek and Coptic, U+0370–U+03FF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Greek_alphabet",
+      "notes": "Characters sourced from the Greek and Coptic Unicode block (U+0370–U+03FF), encoding the first alphabet to systematically represent vowels, ancestor of Latin, Cyrillic, and Armenian scripts."
+    },
+    "coptic": {
+      "unicode_block": "Coptic, U+2C80–U+2CFF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Coptic_script",
+      "notes": "Characters sourced from the Coptic Unicode block (U+2C80–U+2CFF), encoding the script derived from Greek uncials with Demotic Egyptian supplements, used for the Coptic liturgical language."
+    },
+    "gothic": {
+      "unicode_block": "Gothic, U+10330–U+1034F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gothic_alphabet",
+      "notes": "Characters sourced from the Gothic Unicode block (U+10330–U+1034F), encoding the 4th-century alphabet created by Bishop Ulfilas for translating the Bible into Gothic."
+    },
+    "glagolitic": {
+      "unicode_block": "Glagolitic, U+2C00–U+2C5F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Glagolitic_script",
+      "notes": "Characters sourced from the Glagolitic Unicode block (U+2C00–U+2C5F), encoding the oldest known Slavic alphabet created by Saints Cyril and Methodius in the 9th century."
+    },
+    "cyrillic": {
+      "unicode_block": "Cyrillic, U+0400–U+04FF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cyrillic_script",
+      "notes": "Characters sourced from the Cyrillic Unicode block (U+0400–U+04FF), encoding the script developed from Glagolitic and Greek uncials by disciples of Cyril and Methodius."
+    },
+    "etruscan": {
+      "unicode_block": "Old Italic, U+10300–U+1032F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Etruscan_alphabet",
+      "notes": "Characters sourced from the Old Italic Unicode block (U+10300–U+1032F), which encodes Etruscan alongside other archaic Italic alphabets; the Etruscan alphabet was the intermediary between Greek and Latin."
+    },
+    "latin": {
+      "unicode_block": "Basic Latin, U+0000–U+007F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Latin_alphabet",
+      "notes": "Characters sourced from the Basic Latin Unicode block (U+0000–U+007F), encoding the 26-letter Roman alphabet that is the most widely used writing system in the world today."
+    },
+    "runic": {
+      "unicode_block": "Runic, U+16A0–U+16FF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Runic_alphabets",
+      "notes": "Characters sourced from the Runic Unicode block (U+16A0–U+16FF), encoding the Elder Futhark and later runic alphabets used by Germanic peoples from roughly the 2nd to 15th centuries CE."
+    },
+    "armenian": {
+      "unicode_block": "Armenian, U+0530–U+058F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Armenian_alphabet",
+      "notes": "Characters sourced from the Armenian Unicode block (U+0530–U+058F), encoding the 38-letter alphabet created by Mesrop Mashtots in 405 CE, derived from the Greek alphabet."
+    },
+    "georgian": {
+      "unicode_block": "Georgian, U+10A0–U+10FF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Georgian_scripts",
+      "notes": "Characters sourced from the Georgian Unicode block (U+10A0–U+10FF), encoding the Mkhedruli script used for the Georgian language, with origins traced to the Greek alphabet."
+    },
+    "oscan": {
+      "unicode_block": "Old Italic, U+10300–U+1032F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oscan_language",
+      "notes": "Characters sourced from the Old Italic Unicode block (U+10300–U+1032F), which encodes Oscan alongside Etruscan and other archaic Italic alphabets. Oscan was spoken by the Samnites of southern Italy."
+    },
+    "umbrian": {
+      "unicode_block": "Old Italic, U+10300–U+1032F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Umbrian_language",
+      "notes": "Characters sourced from the Old Italic Unicode block (U+10300–U+1032F). Umbrian is attested primarily in the Iguvine Tablets, using a variant of the Etruscan-derived Old Italic alphabet."
+    },
+    "younger_futhark": {
+      "unicode_block": "Runic, U+16A0–U+16FF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Younger_Futhark",
+      "notes": "Characters sourced from the Runic Unicode block (U+16A0–U+16FF). The Younger Futhark, used in Scandinavia from the 8th century, reduced the Elder Futhark from 24 to 16 runes."
+    },
+    "anglo_saxon_futhorc": {
+      "unicode_block": "Runic, U+16A0–U+16FF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Anglo-Saxon_runes",
+      "notes": "Characters sourced from the Runic Unicode block (U+16A0–U+16FF). The Anglo-Saxon Futhorc expanded the Elder Futhark to 28–33 runes to accommodate Old English sounds."
+    },
+    "old_hungarian": {
+      "unicode_block": "Old Hungarian, U+10C80–U+10CFF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Old_Hungarian_script",
+      "notes": "Characters sourced from the Old Hungarian Unicode block (U+10C80–U+10CFF, added in Unicode 8.0). The Székely-Hungarian Rovás derives from the Runic tradition via Old Turkic."
+    },
+    "fraktur": {
+      "unicode_block": "Mathematical Fraktur, U+1D504–U+1D537",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fraktur",
+      "notes": "Characters sourced from the Mathematical Fraktur subset of the Mathematical Alphanumeric Symbols block. Fraktur is a blackletter style of the Latin alphabet used in German-speaking lands from the 16th to mid-20th century."
+    },
+    "ogham": {
+      "unicode_block": "Ogham, U+1680–U+169F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ogham",
+      "notes": "Characters sourced from the Ogham Unicode block (U+1680–U+169F). Ogham is an Early Medieval Irish script written as tally marks along a stem line, likely derived from the Latin alphabet."
+    },
+    "adlam": {
+      "unicode_block": "Adlam, U+1E900–U+1E95F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fula_alphabets#Adlam",
+      "notes": "Characters sourced from the Adlam Unicode block (U+1E900–U+1E95F, added in Unicode 9.0). Adlam was created in the 1980s by Ibrahima and Abdoulaye Barry for the Fula language, drawing on Latin letter shapes."
+    },
+    "old_permic": {
+      "unicode_block": "Old Permic, U+10350–U+1037F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Old_Permic_script",
+      "notes": "Characters sourced from the Old Permic Unicode block (U+10350–U+1037F). The Komi script was created by St. Stephen of Perm in the 14th century, adapting Cyrillic and Greek letterforms for the Komi language."
+    },
+    "caucasian_albanian": {
+      "unicode_block": "Caucasian Albanian, U+10530–U+1056F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Caucasian_Albanian_alphabet",
+      "notes": "Characters sourced from the Caucasian Albanian Unicode block (U+10530–U+1056F, added in Unicode 7.0). The alphabet of ancient Caucasian Albania is closely related to Armenian and may share a common origin."
+    },
+    "lycian": {
+      "unicode_block": "Lycian, U+10280–U+1029F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lycian_alphabet",
+      "notes": "Characters sourced from the Lycian Unicode block (U+10280–U+1029F). The Lycian alphabet was used in southwestern Anatolia (modern Turkey) in the 5th–4th centuries BCE, derived from the Greek alphabet."
+    },
+    "lydian": {
+      "unicode_block": "Lydian, U+10920–U+1093F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lydian_alphabet",
+      "notes": "Characters sourced from the Lydian Unicode block (U+10920–U+1093F). The Lydian alphabet was used in western Anatolia (the kingdom of Lydia) circa 700–200 BCE, adapted from the Phoenician/Greek tradition."
+    },
+    "carian": {
+      "unicode_block": "Carian, U+102A0–U+102DF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carian_alphabets",
+      "notes": "Characters sourced from the Carian Unicode block (U+102A0–U+102DF). The Carian alphabets were used in southwestern Anatolia circa 650–300 BCE; their decipherment was completed only in the 1990s."
+    },
+    "cypriot": {
+      "unicode_block": "Cypriot Syllabary, U+10800–U+1083F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cypriot_syllabary",
+      "notes": "Characters sourced from the Cypriot Syllabary Unicode block (U+10800–U+1083F). The Cypriot syllabary is a syllabic script used for Greek in Cyprus circa 800–300 BCE, descended from the Cypro-Minoan script."
+    },
+    "bactrian": {
+      "unicode_block": "Greek and Coptic, U+0370–U+03FF",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bactrian_language",
+      "notes": "Bactrian was written using a modified Greek alphabet (with the addition of Ϸ sho for the /ʃ/ sound). Characters are sourced from the standard Greek Unicode block as no separate Unicode block exists for Bactrian Greek."
+    },
+    "punic": {
+      "unicode_block": "Phoenician, U+10900–1091F",
+      "source_type": "unicode",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Punic_alphabet",
+      "notes": "The Carthaginian script derived directly from Phoenician, used c. 800 BCE–200 CE across North Africa and the western Mediterranean. Unicode encodes Punic and Phoenician together in the Phoenician block (U+10900–1091F)."
+    }
+  }
+}

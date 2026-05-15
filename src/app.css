@@ -66,6 +66,18 @@ h1 {
   font-weight: 500;
   margin: 0 0 12px;
   color: var(--text);
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.about-link {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--muted);
+  text-decoration: none;
+
+  &:hover { color: var(--accent); }
 }
 
 .hint {
@@ -137,6 +149,21 @@ th.script-col, td.script-col {
   z-index: 2;
 }
 
+.script-cell {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.row-check {
+  flex-shrink: 0;
+  margin: 0;
+  accent-color: var(--accent);
+  cursor: pointer;
+  width: 13px;
+  height: 13px;
+}
+
 thead th.script-col {
   background: var(--surface);
   z-index: 3;
@@ -145,6 +172,10 @@ thead th.script-col {
 tbody tr {
   cursor: pointer;
   user-select: none;
+}
+
+tbody tr td {
+  transition: background-color 0.2s ease;
 }
 
 tbody tr:hover td,
@@ -157,8 +188,26 @@ tbody tr.selected td.script-col {
   background: var(--surface);
 }
 
-tbody tr.selected td:first-child {
-  box-shadow: inset 3px 0 0 var(--accent);
+tbody tr.colored td {
+  background: color-mix(in srgb, var(--row-color) 8%, var(--bg));
+}
+
+tbody tr.colored td.script-col {
+  background: color-mix(in srgb, var(--row-color) 8%, var(--bg));
+}
+
+tbody tr.colored:hover td,
+tbody tr.colored.selected td {
+  background: color-mix(in srgb, var(--row-color) 20%, var(--surface));
+}
+
+tbody tr.colored:hover td.script-col,
+tbody tr.colored.selected td.script-col {
+  background: color-mix(in srgb, var(--row-color) 20%, var(--surface));
+}
+
+tbody tr.colored td:first-child {
+  box-shadow: inset 3px 0 0 var(--row-color);
 }
 
 tbody tr.selected td.script-col .name {
@@ -166,17 +215,18 @@ tbody tr.selected td.script-col .name {
   font-weight: 600;
 }
 
+tr.path-sep td {
+  padding: 0;
+  height: 2px;
+  background: color-mix(in srgb, var(--accent) 30%, var(--border));
+  border-left: none;
+  border-right: none;
+}
+
 td.dim {
   opacity: 0.15;
 }
 
-td.letter-cell {
-  cursor: pointer;
-
-  &:hover {
-    background: color-mix(in srgb, var(--accent) 10%, var(--surface));
-  }
-}
 
 .source-arrow {
   color: var(--border);

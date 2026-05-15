@@ -41,6 +41,11 @@
   ],
   "scripts": [
     {
+      "id": "proto_sinaitic",
+      "name": "Proto-Sinaitic",
+      "root": ""
+    },
+    {
       "id": "brahmi",
       "name": "Brahmi",
       "root": "aramaic"
@@ -48,7 +53,7 @@
     {
       "id": "aramaic",
       "name": "Aramaic",
-      "root": ""
+      "root": "proto_sinaitic"
     },
     {
       "id": "gupta",
@@ -314,6 +319,16 @@
       "id": "zanabazar_square",
       "name": "Zanabazar Square",
       "root": "phagspa"
+    },
+    {
+      "id": "vatteluttu",
+      "name": "Vatteluttu",
+      "root": "tamizhi"
+    },
+    {
+      "id": "tulu_tigalari",
+      "name": "Tulu-Tigalari",
+      "root": "grantha"
     }
   ]
 }
