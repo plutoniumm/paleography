@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<g stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+  <!-- body -->
+  <line x1="12" y1="9" x2="12" y2="19"/>
+  <!-- arms raised -->
+  <path d="M 6 13 L 12 10 L 18 13"/>
+  <!-- head -->
+  <circle cx="12" cy="7" r="2"/>
+</g>
+</svg>
