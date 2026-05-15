@@ -21,6 +21,10 @@ body {
   padding: 24px;
 }
 
+@media (max-width: 600px) {
+  body { padding: 12px; }
+}
+
 /* View Transitions */
 ::view-transition-old(root), ::view-transition-new(root) {
   animation-duration: 0.2s;
@@ -234,9 +238,19 @@ td.dim {
   font-size: 14px;
 }
 
-/* Kawi U+11F00–11F5F needs Noto Serif Kawi; Brahmi U+11000–1107F needs Noto Sans Brahmi */
 td {
-  font-family: 'Noto Serif Kawi', 'Noto Sans Brahmi', system-ui, sans-serif;
+  font-family:
+    'Noto Serif Kawi', 'Noto Sans Brahmi', 'Noto Sans Soyombo', 'Noto Sans Zanabazar Square',
+    'Noto Sans Lepcha', 'Noto Sans Limbu', 'Noto Sans Tirhuta', 'Noto Sans Kaithi',
+    'Noto Sans Syloti Nagri', 'Noto Sans Chakma', 'Noto Sans PhagsPa', 'Noto Sans Meetei Mayek',
+    'Noto Sans Tai Tham', 'Noto Sans New Tai Lue', 'Noto Sans Tai Viet', 'Noto Sans Cham',
+    'Noto Sans Balinese', 'Noto Sans Javanese', 'Noto Sans Sundanese', 'Noto Sans Batak',
+    'Noto Sans Buginese', 'Noto Sans Tagalog', 'Noto Sans Rejang', 'Noto Sans Ahom',
+    'Noto Sans Modi', 'Noto Sans Newa', 'Noto Sans Takri', 'Noto Sans Khojki', 'Noto Sans Sharada',
+    'Noto Sans Gothic', 'Noto Sans Glagolitic', 'Noto Sans Old Permic', 'Noto Sans Old Hungarian',
+    'Noto Sans Adlam', 'Noto Sans Ogham', 'Noto Sans Caucasian Albanian',
+    'Noto Sans Lycian', 'Noto Sans Lydian', 'Noto Sans Carian', 'Noto Sans Cypriot',
+    system-ui, sans-serif;
 }
 
 img.glyph {

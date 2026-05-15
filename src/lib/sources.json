@@ -27,7 +27,33 @@
       "reference_images": [
         {
           "path": "/img/sources/gupta_chart.jpg",
-          "caption": "Brahmi–Gupta–Devanagari evolution chart showing the development of the Gupta script from Brahmi"
+          "caption": "Brahmi–Gupta–Devanagari evolution chart showing the development of the Gupta script from Brahmi",
+          "annotations": [
+            {
+              "x": 0.071,
+              "y": 0.41,
+              "w": 0.028,
+              "h": 0.3,
+              "glyph": "/img/gupta/k.png",
+              "label": "ka"
+            },
+            {
+              "x": 0.126,
+              "y": 0.41,
+              "w": 0.028,
+              "h": 0.3,
+              "glyph": "/img/gupta/g.png",
+              "label": "ga"
+            },
+            {
+              "x": 0.206,
+              "y": 0.41,
+              "w": 0.028,
+              "h": 0.3,
+              "glyph": "/img/gupta/c.png",
+              "label": "ca"
+            }
+          ]
         },
         {
           "path": "/img/sources/gupta_inscription.jpg",
@@ -64,7 +90,33 @@
         },
         {
           "path": "/img/sources/tamizhi_inscription2.jpg",
-          "caption": "Mangulam Tamil-Brahmi inscription, discovered by Robert Sewell in 1882, now at Dakshina Chitra, Chennai"
+          "caption": "Mangulam Tamil-Brahmi inscription, discovered by Robert Sewell in 1882, now at Dakshina Chitra, Chennai",
+          "annotations": [
+            {
+              "x": 0.022,
+              "y": 0.02,
+              "w": 0.085,
+              "h": 0.155,
+              "glyph": "/img/tamizhi/k.svg",
+              "label": "ka"
+            },
+            {
+              "x": 0.11,
+              "y": 0.02,
+              "w": 0.085,
+              "h": 0.155,
+              "glyph": "/img/tamizhi/ng.svg",
+              "label": "ṅa"
+            },
+            {
+              "x": 0.198,
+              "y": 0.02,
+              "w": 0.085,
+              "h": 0.155,
+              "glyph": "/img/tamizhi/c.svg",
+              "label": "ca"
+            }
+          ]
         }
       ],
       "trace_samples": [
@@ -87,7 +139,33 @@
       "reference_images": [
         {
           "path": "/img/sources/gaudi_inscription.jpg",
-          "caption": "Silver coin with Gauḍī script from the Harikela Kingdom, 9th–13th century CE, Indian Museum, Kolkata"
+          "caption": "Silver coin with Gauḍī script from the Harikela Kingdom, 9th–13th century CE, Indian Museum, Kolkata",
+          "annotations": [
+            {
+              "x": 0.09,
+              "y": 0.13,
+              "w": 0.125,
+              "h": 0.175,
+              "glyph": "/img/gaudi/k.svg",
+              "label": "ka"
+            },
+            {
+              "x": 0.245,
+              "y": 0.13,
+              "w": 0.125,
+              "h": 0.175,
+              "glyph": "/img/gaudi/g.svg",
+              "label": "ga"
+            },
+            {
+              "x": 0.39,
+              "y": 0.135,
+              "w": 0.125,
+              "h": 0.17,
+              "glyph": "/img/gaudi/c.svg",
+              "label": "ca"
+            }
+          ]
         },
         {
           "path": "/img/sources/gaudi_inscription2.jpg",
@@ -154,7 +232,33 @@
         },
         {
           "path": "/img/sources/pallava_inscription2.jpg",
-          "caption": "Ciaruteun inscription, a 5th-century Pallava stone inscription discovered in West Java, Indonesia"
+          "caption": "Ciaruteun inscription, a 5th-century Pallava stone inscription discovered in West Java, Indonesia",
+          "annotations": [
+            {
+              "x": 0.115,
+              "y": 0.205,
+              "w": 0.09,
+              "h": 0.12,
+              "glyph": "/img/pallava/k.png",
+              "label": "ka"
+            },
+            {
+              "x": 0.215,
+              "y": 0.205,
+              "w": 0.09,
+              "h": 0.12,
+              "glyph": "/img/pallava/g.png",
+              "label": "ga"
+            },
+            {
+              "x": 0.32,
+              "y": 0.21,
+              "w": 0.09,
+              "h": 0.12,
+              "glyph": "/img/pallava/c.png",
+              "label": "ca"
+            }
+          ]
         }
       ],
       "trace_samples": [

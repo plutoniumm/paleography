@@ -1,9 +1,11 @@
 <script lang="ts">
-  import allSources from './lib/sources.json';
+  import allSources from './sources.json';
+  import { base } from '$app/paths';
 
   export let tree: 'aramaic' | 'latin';
 
-  type RefImage = { path: string; caption: string };
+  type Annotation = { x: number; y: number; w: number; h: number; glyph?: string; label?: string };
+  type RefImage = { path: string; caption: string; annotations?: Annotation[] };
   type SourceEntry = {
     unicode_block: string | null;
     source_type: string;
@@ -31,9 +33,8 @@
     return id.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
   }
 
-  // resolve paths relative to vite base
   function src(path: string) {
-    return import.meta.env.BASE_URL + path.replace(/^\//, '');
+    return base + path;
   }
 </script>
 
@@ -62,8 +63,21 @@
           {#if info.reference_images?.length}
             <div class="ref-images">
               {#each info.reference_images as img}
-                <figure>
-                  <img src={src(img.path)} alt={img.caption} loading="lazy" />
+                <figure class={img.annotations?.length ? 'annotated' : ''}>
+                  <div class="img-wrap">
+                    <img src={src(img.path)} alt={img.caption} loading="lazy" />
+                    {#each img.annotations ?? [] as ann}
+                      <div
+                        class="ann-box"
+                        style="left:{(ann.x*100).toFixed(2)}%;top:{(ann.y*100).toFixed(2)}%;width:{(ann.w*100).toFixed(2)}%;height:{(ann.h*100).toFixed(2)}%"
+                      >
+                        <div class="ann-popup">
+                          {#if ann.glyph}<img src={src(ann.glyph)} alt={ann.label ?? ''} class="ann-glyph" />{/if}
+                          {#if ann.label}<span class="ann-label">{ann.label}</span>{/if}
+                        </div>
+                      </div>
+                    {/each}
+                  </div>
                   <figcaption>{img.caption}</figcaption>
                 </figure>
               {/each}
@@ -72,10 +86,12 @@
 
           {#if info.trace_samples?.length}
             <div class="traces">
-              <span class="traces-label">Traced glyphs</span>
+              <span class="traces-label">Sample glyphs</span>
               <div class="trace-grid">
-                {#each info.trace_samples as path}
-                  <img src={src(path)} alt="" class="trace-glyph" />
+                {#each info.trace_samples.slice(0, 3) as path}
+                  <div class="trace-glyph-wrap">
+                    <img src={src(path)} alt="" class="trace-glyph" />
+                  </div>
                 {/each}
               </div>
             </div>
@@ -107,8 +123,21 @@
           {#if info.reference_images?.length}
             <div class="ref-images">
               {#each info.reference_images as img}
-                <figure>
-                  <img src={src(img.path)} alt={img.caption} loading="lazy" />
+                <figure class={img.annotations?.length ? 'annotated' : ''}>
+                  <div class="img-wrap">
+                    <img src={src(img.path)} alt={img.caption} loading="lazy" />
+                    {#each img.annotations ?? [] as ann}
+                      <div
+                        class="ann-box"
+                        style="left:{(ann.x*100).toFixed(2)}%;top:{(ann.y*100).toFixed(2)}%;width:{(ann.w*100).toFixed(2)}%;height:{(ann.h*100).toFixed(2)}%"
+                      >
+                        <div class="ann-popup">
+                          {#if ann.glyph}<img src={src(ann.glyph)} alt={ann.label ?? ''} class="ann-glyph" />{/if}
+                          {#if ann.label}<span class="ann-label">{ann.label}</span>{/if}
+                        </div>
+                      </div>
+                    {/each}
+                  </div>
                   <figcaption>{img.caption}</figcaption>
                 </figure>
               {/each}
@@ -117,10 +146,12 @@
 
           {#if info.trace_samples?.length}
             <div class="traces">
-              <span class="traces-label">Individual glyphs used</span>
+              <span class="traces-label">Sample glyphs</span>
               <div class="trace-grid">
-                {#each info.trace_samples as path}
-                  <img src={src(path)} alt="" class="trace-glyph" />
+                {#each info.trace_samples.slice(0, 3) as path}
+                  <div class="trace-glyph-wrap">
+                    <img src={src(path)} alt="" class="trace-glyph" />
+                  </div>
                 {/each}
               </div>
             </div>
@@ -168,7 +199,11 @@
 </div>
 
 <style>
-  .about { max-width: 760px; }
+  .about {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 8px;
+  }
 
   h1 {
     font-size: 20px;
@@ -244,6 +279,16 @@
     max-width: 380px;
   }
 
+  figure.annotated {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .img-wrap {
+    position: relative;
+    display: block;
+  }
+
   figure img {
     width: 100%;
     height: 200px;
@@ -253,11 +298,65 @@
     background: var(--surface);
   }
 
+  figure.annotated img {
+    height: auto;
+    object-fit: contain;
+  }
+
   figcaption {
     font-size: 11px;
     color: var(--muted);
     margin-top: 6px;
     line-height: 1.5;
+  }
+
+  /* ── Annotation boxes ── */
+  .ann-box {
+    position: absolute;
+    border: 2px solid #d94f4f;
+    border-radius: 2px;
+    box-sizing: border-box;
+    cursor: default;
+  }
+
+  .ann-box:hover {
+    background: rgba(217, 79, 79, 0.15);
+    z-index: 2;
+  }
+
+  .ann-popup {
+    display: none;
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #16161c;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 10px 12px;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    z-index: 10;
+    min-width: 60px;
+    pointer-events: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    white-space: nowrap;
+  }
+
+  .ann-box:hover .ann-popup { display: flex; }
+
+  .ann-glyph {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    filter: invert(1);
+  }
+
+  .ann-label {
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.04em;
   }
 
   /* ── Trace glyphs ── */
@@ -278,18 +377,28 @@
 
   .trace-grid {
     display: flex;
-    gap: 8px;
+    gap: 10px;
     flex-wrap: wrap;
   }
 
+  /* wrapper carries the background so filter:invert on the img doesn't invert it */
+  .trace-glyph-wrap {
+    width: 52px;
+    height: 52px;
+    background: #1e1e24;
+    border: 2px solid #d94f4f;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
   .trace-glyph {
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     object-fit: contain;
     filter: invert(1);
-    background: var(--surface);
-    border-radius: 3px;
-    padding: 4px;
   }
 
   /* ── Plain Unicode list ── */
@@ -322,5 +431,15 @@
     text-decoration: none;
     font-size: 12px;
     &:hover { text-decoration: underline; }
+  }
+
+  @media (max-width: 600px) {
+    .ref-images { flex-direction: column; }
+    figure { flex: none; max-width: 100%; }
+    figure img { height: 160px; }
+    .traces { flex-direction: column; align-items: flex-start; }
+    h1 { font-size: 17px; }
+    h3 { font-size: 14px; }
+    .card-notes { font-size: 12px; }
   }
 </style>
