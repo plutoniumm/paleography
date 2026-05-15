@@ -1,1 +1,0 @@
-import{t as e}from"../chunks/DDJJNG5z.js";import{n as t}from"../chunks/s8R8Mbwf.js";var n=e({load:()=>r});function r(){t(302,`/aramaic`)}export{n as universal};
