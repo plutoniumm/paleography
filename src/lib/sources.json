@@ -30,26 +30,26 @@
           "caption": "Brahmi–Gupta–Devanagari evolution chart showing the development of the Gupta script from Brahmi",
           "annotations": [
             {
-              "x": 0.071,
-              "y": 0.41,
-              "w": 0.028,
-              "h": 0.3,
+              "x": 0.128,
+              "y": 0.517,
+              "w": 0.026,
+              "h": 0.18,
               "glyph": "/img/gupta/k.png",
               "label": "ka"
             },
             {
-              "x": 0.126,
-              "y": 0.41,
-              "w": 0.028,
-              "h": 0.3,
+              "x": 0.178,
+              "y": 0.517,
+              "w": 0.026,
+              "h": 0.18,
               "glyph": "/img/gupta/g.png",
               "label": "ga"
             },
             {
-              "x": 0.206,
-              "y": 0.41,
-              "w": 0.028,
-              "h": 0.3,
+              "x": 0.256,
+              "y": 0.517,
+              "w": 0.024,
+              "h": 0.18,
               "glyph": "/img/gupta/c.png",
               "label": "ca"
             }
@@ -94,25 +94,25 @@
           "annotations": [
             {
               "x": 0.022,
-              "y": 0.02,
-              "w": 0.085,
-              "h": 0.155,
+              "y": 0.025,
+              "w": 0.072,
+              "h": 0.166,
               "glyph": "/img/tamizhi/k.svg",
               "label": "ka"
             },
             {
-              "x": 0.11,
-              "y": 0.02,
-              "w": 0.085,
-              "h": 0.155,
+              "x": 0.094,
+              "y": 0.017,
+              "w": 0.092,
+              "h": 0.174,
               "glyph": "/img/tamizhi/ng.svg",
-              "label": "ṅa"
+              "label": "na"
             },
             {
-              "x": 0.198,
-              "y": 0.02,
-              "w": 0.085,
-              "h": 0.155,
+              "x": 0.362,
+              "y": 0.207,
+              "w": 0.086,
+              "h": 0.191,
               "glyph": "/img/tamizhi/c.svg",
               "label": "ca"
             }
@@ -140,36 +140,37 @@
         {
           "path": "/img/sources/gaudi_inscription.jpg",
           "caption": "Silver coin with Gauḍī script from the Harikela Kingdom, 9th–13th century CE, Indian Museum, Kolkata",
+          "annotations": []
+        },
+        {
+          "path": "/img/sources/gaudi_inscription2.jpg",
+          "caption": "Silver coin of Danujamarddana inscribed in Gauḍī script, 1417 CE",
           "annotations": [
             {
-              "x": 0.09,
-              "y": 0.13,
-              "w": 0.125,
-              "h": 0.175,
-              "glyph": "/img/gaudi/k.svg",
-              "label": "ka"
-            },
-            {
-              "x": 0.245,
-              "y": 0.13,
-              "w": 0.125,
-              "h": 0.175,
+              "x": 0.731,
+              "y": 0.203,
+              "w": 0.099,
+              "h": 0.202,
               "glyph": "/img/gaudi/g.svg",
               "label": "ga"
             },
             {
-              "x": 0.39,
-              "y": 0.135,
-              "w": 0.125,
-              "h": 0.17,
+              "x": 0.706,
+              "y": 0.405,
+              "w": 0.075,
+              "h": 0.197,
+              "glyph": "/img/gaudi/k.svg",
+              "label": "ka"
+            },
+            {
+              "x": 0.728,
+              "y": 0.602,
+              "w": 0.102,
+              "h": 0.197,
               "glyph": "/img/gaudi/c.svg",
               "label": "ca"
             }
           ]
-        },
-        {
-          "path": "/img/sources/gaudi_inscription2.jpg",
-          "caption": "Silver coin of Danujamarddana inscribed in Gauḍī script, 1417 CE"
         }
       ],
       "trace_samples": [
@@ -235,28 +236,28 @@
           "caption": "Ciaruteun inscription, a 5th-century Pallava stone inscription discovered in West Java, Indonesia",
           "annotations": [
             {
-              "x": 0.115,
-              "y": 0.205,
-              "w": 0.09,
-              "h": 0.12,
-              "glyph": "/img/pallava/k.png",
-              "label": "ka"
-            },
-            {
-              "x": 0.215,
-              "y": 0.205,
-              "w": 0.09,
-              "h": 0.12,
+              "x": 0.557,
+              "y": 0.211,
+              "w": 0.086,
+              "h": 0.137,
               "glyph": "/img/pallava/g.png",
               "label": "ga"
             },
             {
-              "x": 0.32,
-              "y": 0.21,
-              "w": 0.09,
-              "h": 0.12,
+              "x": 0.157,
+              "y": 0.361,
+              "w": 0.114,
+              "h": 0.196,
               "glyph": "/img/pallava/c.png",
               "label": "ca"
+            },
+            {
+              "x": 0.500,
+              "y": 0.527,
+              "w": 0.093,
+              "h": 0.215,
+              "glyph": "/img/pallava/k.png",
+              "label": "ka"
             }
           ]
         }

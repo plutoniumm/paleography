@@ -330,8 +330,8 @@
     bottom: calc(100% + 8px);
     left: 50%;
     transform: translateX(-50%);
-    background: #16161c;
-    border: 1px solid var(--border);
+    background: #ffffff;
+    border: 1px solid #d0cfe8;
     border-radius: 6px;
     padding: 10px 12px;
     flex-direction: column;
@@ -340,7 +340,7 @@
     z-index: 10;
     min-width: 60px;
     pointer-events: none;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
     white-space: nowrap;
   }
 
@@ -350,12 +350,11 @@
     width: 44px;
     height: 44px;
     object-fit: contain;
-    filter: invert(1);
   }
 
   .ann-label {
     font-size: 11px;
-    color: var(--muted);
+    color: #555;
     letter-spacing: 0.04em;
   }
 

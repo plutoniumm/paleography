@@ -1,14 +1,11 @@
-import adapter from '@sveltejs/adapter-static';
-
-const base = process.env.BASE?.replace(/\/$/, '') ?? '';
+import adapter from '@sveltejs/adapter-node';
 
 /** @type {import('@sveltejs/kit').Config} */
 export default {
   kit: {
-    adapter: adapter({ pages: 'dist', assets: 'dist', fallback: null }),
-    paths: { base },
-    prerender: {
-      handleHttpError: 'warn'
+    adapter: adapter({ out: 'dist' }),
+    files: {
+      assets: 'public'
     }
   }
 };
