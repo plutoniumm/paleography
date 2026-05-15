@@ -7,7 +7,7 @@
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "BASE=/paleography vite build && npx gh-pages -d build"
+    "deploy": "BASE=/paleography vite build && touch build/.nojekyll && npx gh-pages -d build --dotfiles"
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^3.0.10",
